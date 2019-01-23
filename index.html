@@ -1,47 +1,106 @@
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<div class="container">
-    <div class="span3 well">
-        <center>
-        <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
-        <h3>Joe Sixpack</h3>
-        <em>click my face for more</em>
-		</center>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                    <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
-                    </div>
-                <div class="modal-body">
-                    <center>
-                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
-                    <h3 class="media-heading">Joe Sixpack <small>USA</small></h3>
-                    <span><strong>Skills: </strong></span>
-                        <span class="label label-warning">HTML5/CSS</span>
-                        <span class="label label-info">Adobe CS 5.5</span>
-                        <span class="label label-info">Microsoft Office</span>
-                        <span class="label label-success">Windows XP, Vista, 7</span>
-                    </center>
-                    <hr>
-                    <center>
-                    <p class="text-left"><strong>Bio: </strong><br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
-                    <br>
-                    </center>
-                </div>
-                <div class="modal-footer">
-                    <center>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
-                    </center>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 290px;
+  height: auto;
+  padding: 5px;
+ /* only for demonstration, should be removed */
+  
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 15px;
+  width: 80%;
+  background-color: #f1f1f1;
+   /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Kenneth Paulo S. Quilos</h2>
+  <h4>Pawi<h4>
+</header>
+
+<section>
+  <nav>
+   <img src="mypic.jpg" alt="Look at me!" width="300" height="400">
+  </nav>
+  
+  <article>
+    <h1>Favorite CMSC subject:</h1>
+    <p>My favorite CMSC subject is CMSC 22 which is Object Oriented Programming. It was taught to us in the most exciting way by Sir Bulacs. His goals for the day were not only to teach us the lessons but also to impart life lessons that we could use to make us wiser. The most fun part of the class was when we did our own implementation of Bomberman.</p>
+
+    <h1>Favorite GE:</h1>
+    <p>My favorite GE is Psychology 1. Psychology is one of my interests because I want to undestand how our mind works. There is so much to learn about the mysteries of the mind. When I took the subject, we went to Ocean Adventure in Subic to see the trained animals perform.</p>
+
+    <h1>Favorite Programming Language:</h1>
+    <p>Java is my programming language. I have learned using Java in my favorite subject which is CMSC 22. I love it because it is easy to use and I can code my interests using it. It is very exciting to make digital versions of real-life objects and make it work.</p>
+
+    <h1>Favorite Food:</h1>
+    <p>My mom always cooks spaghetti during my birthday that is why it is my favorite food. I love different kinds of pasta but the sweet filipino style is my favorite. With the combination of cheese, tomato sauce, hotdogs, meat and sugar, it sure makes my celebration more fun. My friends also like my mom's recipe </p>
+    
+  </article>
+</section>
+
+<footer>
+  <p>Nice to meet you!</p>
+</footer>
+
+</body>
+</html>
